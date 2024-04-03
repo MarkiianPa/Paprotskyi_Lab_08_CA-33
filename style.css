@@ -1,0 +1,553 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+body {
+   background-color: #D2D2D2
+}
+
+
+header {
+    background-color: #838383;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 20px 0 20px;
+}
+
+
+header a{
+    text-decoration: None;
+    color: #fff;
+    font-size: 32px;
+}
+
+.icon-container{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+header form{
+    padding: 6px;
+}
+
+form input[type="text"] {
+    width: 400px;
+    padding: 4px
+}
+
+form button[type="submit"] {
+    width: 75px;
+    padding: 4px
+}
+
+.icon-container img{
+    width:40px;
+}
+
+.icon-container div {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container div span{
+    margin: 10px
+}
+
+nav{
+    background-color: #838383;
+    padding: 5px 0 5px 0;
+
+}
+
+nav div {
+    background-color: #D2D2D2;
+    display:flex;
+    justify-content: space-between;
+    margin: 20px 0 20px 0;
+    padding: 10px 180px 10px 180px;
+}
+
+nav div a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px
+}
+.main-article{
+    padding: 0 160px 0 160px;
+}
+
+.main-article video{
+    width: 100%;
+}
+
+article h2{
+    background-color: #838383;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+article h4{
+    text-align: center;
+    padding: 15px 0 0 0;
+}
+
+article p {
+    font-size: 16px;
+    padding: 5px;
+}
+
+.photo{
+    width: 100%;
+}
+
+.photo-div {
+    position: relative;
+    display: inline-block;
+    padding: 5px 160px 5px 160px;
+}
+
+.photo-text {
+    position: absolute;
+    top: 50%; /* Позиціонуємо по вертикалі на середину */
+    left: 50%; /* Позиціонуємо по горизонталі на середину */
+    transform: translate(-50%, -50%); /* Центруємо відносно середини */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+
+main p{
+    margin-left: 160px;
+    margin-right: 160px;
+    text-align: center
+}
+
+main h3{
+    background-color: #838383;
+    margin-left: 160px;
+    margin-right: 160px;
+    text-align: center;
+    margin: 20px 0 20px 0;
+    padding: 10px
+
+}
+
+main h4{
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+main{
+text-align: center;
+}
+
+main button {
+    padding: 10px 20px;
+    background-color: #838383;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+}
+
+main button:hover {
+    background-color: #0056b3;
+}
+
+#last {
+    padding: 0 0 15px 0 ;
+}
+
+h1 {
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+
+#main_text {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+
+footer {
+    background-color: #838383;
+    padding-bottom: 32px;
+}
+
+footer h2{
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-info *{
+    color: #fff;
+    text-align: left;
+    padding: 5px;
+    margin:0;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    text-align: left;
+    padding: 5px;
+    margin:0 0 0 80px;
+}
+
+.photogallery-general{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 80px 20px 80px;
+}
+.photogallery{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 160px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.card p{
+    margin-left:0;
+    margin-right:0;
+}
+.photogallery-general h3{
+    margin-left:0;
+    margin-right:0;
+    padding-top: 20px
+}
+.card h4{
+    margin-left:0;
+    margin-right:0;
+}
+
+.card img{
+    width: 100%;
+    margin-left:0;
+    margin-right:0;
+
+}
+
+.hamburger-menu{
+    display:none;
+}
+
+@media screen and (max-width: 1024px){
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensuring padding and border are included in the element's total width and height */
+}
+
+body {
+  background-color: #D2D2D2;
+}
+
+header {
+  background-color: #838383;
+  display: flex;
+  flex-direction: column; /* Adjusting for smaller screens */
+  align-items: center; /* Centering content */
+  padding: 20px 20px 0 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px; /* Reducing font size for better readability on mobile */
+  margin-bottom: 10 px; /* Adding space between links */
+}
+
+.icon-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+header form {
+  width: 100%;
+}
+
+form input[type="text"] {
+  width: 74%;
+  padding: 8px;
+  margin-bottom: 10px; /* Adding space between input and button */
+}
+
+form button[type="submit"] {
+  width: 24%;
+  padding: 8px;
+}
+
+nav div a{
+  display: none;
+}
+
+nav div{
+padding-right:0;
+padding-left:10px;
+}
+
+
+.main-article {
+  padding: 0 10px; /* Adjusting padding for better content display on mobile */
+}
+
+.main-article video {
+  width: 100%;
+}
+
+article h2 {
+  font-size: 24px; /* Reducing font size for better readability on mobile */
+}
+
+article h4 {
+  font-size: 18px; /* Reducing font size for better readability on mobile */
+}
+
+article p {
+  font-size: 14px; /* Reducing font size for better readability on mobile */
+}
+
+.photo-div {
+  padding: 5px;
+}
+
+.photo-div .photo-text {
+  font-size: 14px; /* Reducing font size for better readability on mobile */
+  padding: 8px;
+}
+
+main p,
+main h3,
+main h4 {
+  margin: 0 10px; /* Adjusting margins for better spacing on mobile */
+}
+
+main h3 {
+  font-size: 22px; /* Reducing font size for better readability on mobile */
+  padding: 8px; /* Adjusting padding for better spacing */
+}
+
+main button {
+  width: 100%;
+  margin: 10px 0; /* Adding space between buttons */
+}
+
+footer {
+  background-color: #838383;
+  padding: 20px;
+}
+
+footer h2 {
+  font-size: 20px; /* Reducing font size for better readability on mobile */
+}
+
+.contact-info {
+    flex-direction: column;
+}
+.photogallery-general {
+  padding: 0 10px;
+  margin: 0;
+}
+
+.photogallery{
+    gap: 5px;
+}
+
+.card {
+  width: 95px;
+  margin-bottom: 10px; /* Adding space between cards */
+
+}
+
+.card img {
+  width: 100%; /* Ensuring images maintain aspect ratio */
+}
+
+.card p,
+.card h4 {
+  font-size: 14px; /* Reducing font size for better readability on mobile */
+}
+
+.photogallery-general h3{
+    margin-left:0;
+    margin-right:0;
+    padding-top: 10px
+}
+
+h1 {
+    top: 49%;
+    font-size: 16px;
+    background-color: rgba(0, 0,0, 0.3);
+}
+
+#main_text {
+    top: 62%;
+    font-size: 14px;
+    width: 250px;
+    background-color: rgba(0, 0,0, 0.3);
+}
+
+
+
+.photo-div img{
+   height:170px
+}
+
+.photo-text {
+    width: 90% ;
+    top: 50%; /* Позиціонуємо по вертикалі на середину */
+    left: 50%; /* Позиціонуємо по горизонталі на середину */
+    transform: translate(-50%, -50%); /* Центруємо відносно середини */
+    background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+footer{
+    padding:0
+}
+
+main button {
+   width: 150px;
+}
+
+
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+#menu__toggle:checked ~ .menu__btn{
+  top: 20px;
+  position: fixed;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 200px;
+  left: 20px;
+
+  width: 30px;
+  height: 30px;
+
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #616161;
+
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+
+  width: 300px;
+  height: 100%;
+
+  margin: 0;
+  padding: 80px 0;
+
+  list-style: none;
+
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+
+  transition-duration: .25s;
+  z-index: 1;
+}
+
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+
+  color: #333;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+.hamburger-menu {
+    display: block; /* або inline */
+}
+}
+
+.card:hover {
+    background: linear-gradient( #838383, #D2D2D2   , #838383); /* Градієнт від синього до блакитного */
+    color: #fff;
+}
+
